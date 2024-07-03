@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,26 @@
             color: white;
             padding: 1rem;
             text-align: center;
+        }
+        .navbar {
+            background-color: white;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            padding: 1rem 0;
+            z-index: 1000;
+            border-bottom: 1px solid #ccc;
+        }
+        .navbar h1 {
+            margin: 0;
+            color: darkblue;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .navbar h1 a {
+            color: darkblue;
+            text-decoration: none;
         }
         nav {
             display: flex;
@@ -60,10 +80,13 @@
 </head>
 <body>
     <header>
+<div class="navbar">
+        <h1><a href="index.html">Yatraasaathi</a></h1>
+    </div>
         <h1>Discover Your Perfect Travel Route</h1>
         <p>Affordable, Safe, and Tailored to Your Preferences</p>
     </header>
-    <nav>
+        <nav>
         <a href="#about">About</a>
         <a href="#comparison">Comparison</a>
         <a href="#contact">Contact</a>
@@ -124,4 +147,4 @@
         <p>&copy; 2024 Travel Website. All rights reserved.</p>
     </footer>
 </body>
-</html>
+    </html>
